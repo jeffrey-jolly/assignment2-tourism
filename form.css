@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin-left: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    max-width: 20em;
+    max-height: 20em;
+    float: left;
+    padding: 10px 10px;
+}
+
+.header ul {
+    text-align: right;
+    max-height: 2%;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+    block-size: 90px;
+    border-radius: 50px;
+}
+
+.header ul li a {
+    display: -webkit-inline-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 20px;
+    transition: all ease 0.5s;
+    margin-top: 20px;
+    margin-right: 7px;
+    outline: none;
+}
+
+.header ul li a:hover {
+    background-color: #000;
+    border-radius: 50px;
+    transform: skewY(10);
+    transition: ease-out .2s;
+}
+
+.clickme {
+    background-color: #EEEEEE;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.danger {
+    background-color: #2e1bd8;
+    color: #FFFFFF;
+}
+
+.danger:hover {
+    background-color: #EB003B;
+    color: #FFFFFF;
+}
+
+.active {
+    background-color: #ee1616;
+    color: #FFFFFF;
+}
+
+h5 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+footer {
+    position: fixed;
+    margin-bottom: 0px;
+    clear: both;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(5, 0, 0);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.form {
+    width: 30%;
+    padding: 2%;
+    border: 5px solid rgb(95, 183, 238);
+    background-image: linear-gradient(to right, #e2e8eb, #e5ecf5);
+    margin-left: 35%;
+    min-height: 50%;
+    border-radius: 12px;
+    box-shadow: 3px 3px 4px #000000;
+    object-position: center;
+}
+
+body {
+    background: url(images/alappuzha-bg.jpg);
+    background-position: center;
+    object-fit: contain;
+    width: 100%;
+}
+
+.bubble {
+    display: none;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 14px;
+    text-align: center;
+    color: #000;
+    margin-left: -100%;
+}
+
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+.valid {
+    color: green;
+    display: block;
+}
+
+.valid::before {
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid::before {
+    content: "✖"
+}
+
+form .indicator {
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+form .indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+form .indicator span:nth-child(2) {
+    margin: 0 3px;
+}
+
+form .indicator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.weak:before {
+    background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+    background-color: orange;
+}
+
+.indicator span.strong:before {
+    background-color: #23ad5c;
+}
+
+form .text {
+    font-size: 20px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: -10px;
+}
+
+form .text.weak {
+    color: #ff4757;
+}
+
+form .text.medium {
+    color: orange;
+}
+
+form .text.strong {
+    color: #23ad5c;
+}
